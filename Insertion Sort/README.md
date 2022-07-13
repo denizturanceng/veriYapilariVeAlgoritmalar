@@ -1,36 +1,35 @@
-[7,5,1,8,3,6,0,9,4,2]
-Yukarıda verilen dizinin Binary Search Tree aşamalarını yazınız.
-root = 7
+[22,27,16,2,18,6] -> Insertion Sort
 
-           ________[7]________
-           |                 |
-      ____[5]____           [8]____
-      |         |                 |
-  ___[1]___    [6]               [9]
-  |       |
- [0]_____[3]____
-      |        |
-     [2]      [4]
+1) Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.
+
+ [22|, 27, 16, 2, 18, 6]  -  n   
+ [22, 27|, 16, 2, 18, 6]  -  n-1  
+ [16, 22, 27|, 2, 18, 6]  -  n-2  
+ [2, 16, 22, 27|, 18, 6]  -  n-3   
+ [2, 16, 18, 22, 27|, 6]  -  1  
+ [2, 6, 16, 18, 22, 27]   
+ 
+ 
+2) Big-O gösterimini yazınız.
+
+Best case    : O(n)
+Average case : O(n^2)
+Worst case   : O(n^2)
 
 
+3) Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
 
-Açıklama
-Root 7'dir.
+Worst case: [27, 22, 18, 16, 6, 2]  
+Best case: [2, 6, 16, 18, 22, 27]
 
-5, 7'den küçük olduğu için root'un solunda bulunur.
 
-1, 7'den ve 5'ten küçük olduğu için 5'in solunda bulunur.
+4) Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
 
-8, 7'den büyük olduğu için 7'nin sağında bulunur.
+Average Case
 
-3, 7'den ve 5'ten küçük; 1'den büyük olduğu için 1'in sağında bulunur.
+5) [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
 
-6, 7'den küçük 5'den büyük olduğu için 5'in sağında bulunur.
-
-0, hepsinden küçük olduğu için kendinden önceki en küçük sayı olan 1'in solunda bulunur.
-
-9, hepsinden büyük olduğu için kendinden önceki en büyük sayı olan 8'in sağında bulunur.
-
-4, 7 ve 5'ten küçük; 1 ve 3'ten büyük olduğu için 3'ün sağında bulunur.
-
-2, 7 ve 5'ten küçük; 1'den büyük ve 3'ten küçük olduğu için 3'ün solunda bulunur.
+   [7| , 3, 5, 8, 2, 9, 4, 15, 6]
+   [3, 7| , 5, 8, 2, 9, 4, 15, 6]
+   [3, 5, 7| , 8, 2, 9, 4, 15, 6]
+   [3, 5, 7, 8| , 2, 9, 4, 15, 6]
