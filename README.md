@@ -1,1 +1,1 @@
-# veriYapilariVeAlgoritmalar
+# Veri Yapıları Ve Algoritmalar Örnekleri
